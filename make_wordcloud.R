@@ -1,5 +1,5 @@
 # author: /u/litell_johnn
-# all 16 lyric files (12 members + 3 units + OT12) assumed to be in directory.
+# all 16 lyric files (12 members + 3 units + OT12) assumed to be in directory. Change -stub- to "extra" to use lyrics from all of the songs.
 # colors are approximate (for visibility etc). Does not work with hex codes at the moment (possible conflict with col2rgb function?)
 
 rm(list=ls())
@@ -25,6 +25,7 @@ words_to_drop = c(stopwords("en"),
                 "let")  #edit this list as needed
 
 cutoff = 5  #minimum number of times a word has to be used to appear in plot
+
 
 # Read and clean lyrics ----------------------------------------------------------
 
@@ -56,7 +57,6 @@ SplitWords = function(x) {
 }
 
 wordslist = lapply(1:16, SplitWords)
-
 
 ## Append to one table, count and drop duplicates
 
