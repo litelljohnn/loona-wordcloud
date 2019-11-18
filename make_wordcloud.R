@@ -1,3 +1,7 @@
+# author: /u/litell_johnn
+# all 16 lyric files (12 members + 3 units + OT12) assumed to be in directory.
+# colors are approximate (for visibility etc). Does not work with hex codes at the moment (possible conflict with col2rgb function?)
+
 rm(list=ls())
 setwd("")   #set path
 library(readtext)
